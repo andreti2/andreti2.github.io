@@ -1,0 +1,185 @@
+body{
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+  }
+  
+*{
+  margin:0;
+  padding:0;
+  }
+  
+
+
+/*CURSOR DE LOS DEMAS CLIENTES*/
+.cursor{
+  position:absolute;
+  width:15px;
+  height:22px;
+  background:url('../img/pointer.png') no-repeat -4px 0;
+}
+
+#cursores{
+  position:relative;
+}
+  
+/*PLANO PARA DIBUJAR*/
+canvas{
+  background: #C9C9C9 none repeat scroll 0% 0%;
+  }
+
+
+/*BIENVENIDA DE LA APP*/
+hgroup{
+  position: fixed;
+  /*background-color: rgba(255, 255, 255, 0.7);*/
+  background:transparent;
+  width: 500px;
+  height: 78px;
+  top: 50%;
+  left: 50%;
+  margin: -120px 0 0 -225px;
+  text-align: center;
+  padding: 25px;
+  /*box-shadow: 0 0 3px rgba(100, 100, 100, 0.1), 0 3px 1px #D4D4D4;*/
+  color: #555;
+}
+  
+
+h1{
+  font-size: 50px;
+  padding-bottom: 8px;
+  }
+  
+
+h2{
+  font-size: 13px;
+  font-weight: normal;
+  padding-bottom: 8px;
+  }
+  
+
+h3{
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  color: #999;
+  }
+  
+
+/*EL NUMERO DE CONECTADOS*/
+#conectados{
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  font-size: 18px;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+ 
+#opciones{
+    position: fixed;
+    left: 5px;
+    top: 40px;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+#opciones a{
+  font-size:15px; 
+  text-decoration:none; 
+  color: white;
+}
+
+#opciones a:hover{
+  color: black;
+}
+
+#clean{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+  
+
+/*ESTILOS PARA EL CHAT*/  
+
+#chat{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 300px;
+  width: 200px;
+   background-color: rgba(42, 153, 217, 0.4);
+  padding: 10px;
+}
+
+.tituloChat , .mensajesChat , .entradaMsg{
+  border-radius: 5px;
+  height: 10%;
+  margin: auto;
+  margin: 0;
+  margin-top: 3px;
+  padding: 3px;
+  width: 95%;
+}
+
+.tituloChat{
+  background: blue;
+  margin: 0px !important;
+}
+
+#nombre{
+  color: white;
+  margin-left: 5px;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.mensajesChat{
+  background: white;
+  height: 60% !important;
+}
+
+#msgs{
+  height: 95%;
+  width: 95%;
+}
+
+.msgClass{
+  background: white;
+  border: none;
+  outline: none;
+  resize:none;
+  padding: 2px;
+}
+
+.entradaMsg{
+  background: white;
+  padding: 2px !important;
+  height: 20% !important;
+}
+
+#msg{
+  display: inline-block;
+  width: 70% !important;
+}
+
+#btnTrasnparente{
+  border: 0; 
+  background: transparent;
+  display: inline-block;
+  width: 20%;
+}
+
+.enviarBtn{
+  border: 0; 
+  background: transparent;
+  display: inline-block;
+  width: 20%;
+}

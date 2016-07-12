@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head >
+  
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+  
+  <title>NodeJS Unimar</title>
+
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="./img/imagen.ico" />
+
+  <!--<script src="http://localhost:5000/socket.io/socket.io.js"></script>-->
+  <!--<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>-->
+  <script src="./js/socket.io.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/cliente.js"></script>
+
+</head>
+<body>
+  <!--Numero de conectados-->
+  <div id="conectados"></div>
+
+  <div id="opciones">
+    <input type="image" value="" title="Limpiar plano" src="./img/clean.png" id="clean"/>
+    <a href="./views/registro.txt" target="_blank">Registro</a>
+  </div>
+  <!-- Aqui estaran los cursores-->
+  <div id="cursores"></div>
+
+  <!--canvas donde se dibujara-->
+  <canvas id="plano" width="2000" height="700">
+    Tu navegador debe soportar canvas
+  </canvas>
+
+  <!--Bienvenida-->
+  <hgroup id="info">
+    <h1>¡Ejercicio NodeJS!</h1>
+    <h2>Dibuja dentro del plano con tu cursor</h2>
+  </hgroup>
+
+  <!--Chat-->
+  <div id="chat">
+
+    <div class="tituloChat">
+      <label id="nombre"></label>
+    </div>
+
+    <div class="mensajesChat">
+      <textarea id="msgs" class="msgClass" readonly="readonly"></textarea>
+    </div>
+
+    <div class="entradaMsg">
+        <textarea id="msg" class="msgClass" ></textarea> 
+        <input type="image" value="" class="enviarBtn" src="./img/send.png" id="sendBtn"/>
+    </div>
+
+  </div>
+
+</body>
+</html>
